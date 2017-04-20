@@ -60,27 +60,26 @@ SASS Directories
 
 Evernote의 Sass 구조로 빌드에서 많은 Sass 파일을 사용한다. 때로는 더 이상 사용되지 않기 때문에, 미사용 Sass 모듈을 자동으로 제거하는 [Sassyclean](https://github.com/ryanburgess/grunt-sassyclean)이라는 Grunt 작업을 사용하기 시작했다.
 
-## Rules
+## Rules (규칙)
+  - 페이지 당 최대 2 개의 CSS 파일 만 있어야합니다 (이렇게하면 HTTP 요청이 방지됩니다)
+  - 각 선택자는 규칙을 위한 한줄
+  - 관련항목을 함께 나열하시오
+  - 중첩은 3단계 까지만
+  - 파일을 작은 모듈로 나눈다.(100줄보다 큰 scss 파일을 사용하지 않는다)
+  - 사이트에서 ID사용은 지양한다. 상위 요소에 ID를 사용한다 (예: Header, Footer, Main, ), !important를 사용하는 클래스 사용은 지양한다.
+  - 주석을 달 것
+  - a ```:hover``` 가상 클래스의 스타일이 지정된 경우, ```:focus```도 접근성을 위해 스타일을 지정해야한다.
 
-  - There should only be a maximum of 2 CSS files per page ( this prevents HTTP requests )
-  - One line for each selector or rule
-  - List related items together
-  - Only nest 3 levels deep
-  - Break files out into small modules (avoid having a SCSS file that is larger than 100 lines)
-  - Avoid using IDs throughout the site. Use IDs for parent elements. Example: Header, Footer, Main. Using Classes avoids having to use !important 
-  - Be generous with commenting
-  - If a ```:hover``` pseudo class is styled, ```:focus``` should also be styled for accessibility.
-
-## Commenting
-  - Using "// " for your comments in SASS and they will not output in the compiled CSS
-
-
-## Variables
-  - Any values commonly throughout the SASS build should be set as a variable (fonts, colors, percentages, z-index)
-  - All colors should be variables
+## Commenting (주석)
+  - Sass 파일에서 주석에 "//"을 사용하면 컴파일 된 css에 출력되지 않는다.
 
 
-## Order of imports
+## Variables (변수)
+  - Sass build 전반에 일반적으로 사용되는 값(글꼴, 컬러, 백분율, z-index)는 변수로 설정해야 한다.
+  - 모든 색상은 변수여야한다.
+
+
+## Order of imports (import 순서)
   - Vendor dependancies (compass)
   - Authored dependancies (Mixins, variables)
   - Base styles ( reset, fonts, typography )
