@@ -5,7 +5,7 @@ Evernote SASS Structure Boilerplate
 
 ※ 의역 오역 많음, 원문 꼭 읽어볼 것([원문](README-eng.md))
 
-[SMACSS](http://smacss.com/) 책을 읽고 매우 도움이 된다고 생각해서 에버노트의 프런트 엔드 팀은 몇가지 방법을 우리의 Sass build에 사용했다.
+[SMACSS](http://smacss.com/) 책을 읽고 매우 도움이 된다고 생각해서 에버노트의 프런트 엔드 팀은 몇가지 방법을 Sass build에 사용했다.
 Sass 파일을 디렉토리(Base, Layout, Modules 및 Views)로 나누면 프로젝트 파일을 구성하고, css를 깨끗하고 논리적인 파일로 컴파일 하는데 도움이 된다.
 각 페이지에는 특정 페이지를 작성하는 데 필요한 Base, Layout, Modules 및 Views에서 개별 모듈러 컴포넌트를 가져오는 프로젝트 파일로 작동하는 Sass (.scss)파일이 생성된다.
 
@@ -32,7 +32,8 @@ SASS Directories
 
 1.  Base
 
-	The base directory contains styles that help start a project. The base directory could contain the following type of SASS files:
+  Base 디렉토리에는 프로젝트를 시작하는 데 도움이 되는 스타일이 있다. 기본 디렉토리에는 다음 유형의 Sass파일이 포함될 수 있다. : 
+
 	* Vendor dependancies (Compass, Foundation)
 	* Authored dependancies (Mixins, variables, Extends)
 	* Fonts
@@ -40,13 +41,15 @@ SASS Directories
 
 2.  Layout
 
-	The layout directory contains styles that are large containers of a page. This directory could include SASS files like:
+  Layout 디렉토리는 페이지의 큰 컨테이너인 스타일을 포함한다. 이 디렉토리는 다음과 같은 Sass 파일이 포함될 수 있다. : 
+
 	* Responsive Grid
 	* Page specific layouts
 
 3.  Modules
 
-	The modules directory will probably contain the bulk of your SASS files. A page may consist of multiple modules and should be styled individually. These modules may include files like:
+  Modules 디렉토리에는 많은 Sass파일이 들어있을 것이다. 페이지는 여러 모듈로 구성 될 수 있으며 개별적으로 스타일을 지정해야한다. 이 모듈에는 다음과 같은 Sass 파일이 포함될 수 있다. : 
+
 	* Header
 	* Footer
 	* Navigation
@@ -54,11 +57,11 @@ SASS Directories
 
 4.  Views
 
-	The views directory contains any specific styles that a page may need to change from the generic layout or modules. For example the header in your website maybe green throughout a website or application but on a specific page you want it to change to a blue background that's where the views files would come in.
+	Views 디렉토리에는 페이지가 일반 레이아웃 또는 모듈에서 변경해야하는 특정 스타일이 포함되어 있다. 예를 들어 웹 사이트의 헤더가 웹 사이트나 어플리케이션에서 녹색이더라도 views 파일이 들어오는 특정 페이지에서는 파란색 배경으로 바꿀 수 있다.
 
-## Removing unused Sass modules
+## 미사용 Sass 모듈 분리(삭제)
 
-With Evernote's Sass structure we run into having a lot of Sass files in our build. Sometimes they are no longer used so we've started using a Grunt task called [Sassyclean](https://github.com/ryanburgess/grunt-sassyclean) that helps automate removing old unused Sass modules.
+Evernote의 Sass 구조로 빌드에서 많은 Sass 파일을 사용한다. 때로는 더 이상 사용되지 않기 때문에, 미사용 Sass 모듈을 자동으로 제거하는 [Sassyclean](https://github.com/ryanburgess/grunt-sassyclean)이라는 Grunt 작업을 사용하기 시작했다.
 
 ## Rules
 
