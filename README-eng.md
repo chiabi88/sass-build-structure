@@ -3,29 +3,22 @@ Evernote SASS Structure Boilerplate
 
 [![npm version](https://badge.fury.io/js/evernote-sass.svg)](http://badge.fury.io/js/evernote-sass)
 
-※ 의역 오역 많음, 원문 꼭 읽어볼 것([원문](README-eng.md))
+After reading the book [SMACSS](http://smacss.com/) and finding it very helpful the Front End team at Evernote has used some of the ideas in our SASS build. We've found breaking the SASS files out into directories (Base, Layout, Modules, and Views) helps organize our files in a project and compile CSS into a clean, logical file. Each page has a SASS (.scss) file created that acts as a project file that imports the individual modular components from Base, Layout, Modules, and Views that are needed to build the particular page.
 
-[SMACSS](http://smacss.com/) 책을 읽고 매우 도움이 된다고 생각해서 에버노트의 프런트 엔드 팀은 몇가지 방법을 우리의 Sass build에 사용했다.
-Sass 파일을 디렉토리(Base, Layout, Modules 및 Views)로 나누면 프로젝트 파일을 구성하고, css를 깨끗하고 논리적인 파일로 컴파일 하는데 도움이 된다.
-각 페이지에는 특정 페이지를 작성하는 데 필요한 Base, Layout, Modules 및 Views에서 개별 모듈러 컴포넌트를 가져오는 프로젝트 파일로 작동하는 Sass (.scss)파일이 생성된다.
+This build methodology is currently being used on [Evernote.com](https://evernote.com).
 
-이 빌드 방법론은 현재 [Evernote.com](https://evernote.com) 에서 사용되고 있다.
-
-## Install (설치)
+## Install
 
 ```js
 npm install evernote-sass -g
 ```
 
-## Use (사용)
+## Use
+Run ```evernotesass``` in a directory where you'd like to use the Evernote Sass build.
 
-Evernote Sass 빌드를 사용하려는 디렉토리에 ```evernotesass```를 실행.
+To create new individual Sass files run ```evernotesass-page name=filename path=Path-To-Sass-directory```. If the name isn't set the file will be named 'page' and if the path isn't set it assumes the directory is 'sass'.
 
-새로 개별적인 Sass 파일을 만드려면 ```evernotesass-page name=filename path=Path-To-Sass-directory```를 실행.
-이름이 설정되어 있지 않으면 파일의 이름은 'page'이고 만약 경로가 설정되지 않은 경우 디렉토리는 'sass'로 간주된다.
-
-새로운 Sass 모듈을 만드려면 ```evernotesass-module name=filename path=Path-To-Sass-Modules-directory``` 실행.
-이름을 설정하지 않으면 파일의 이름은 'module'로 지정되고 경로가 설정되지 않으면 디렉토리는 'sass/modules'로 간주된다.
+To create new Sass module run ```evernotesass-module name=filename path=Path-To-Sass-Modules-directory```. If the name isn't set the file will be named 'module' and if the path isn't set it assumes the directory is 'sass/modules'.
 
 SASS Directories
 ----------
