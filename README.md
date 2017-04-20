@@ -32,32 +32,29 @@ SASS Directories
 
 1.  Base
 
-  Base 디렉토리에는 프로젝트를 시작하는 데 도움이 되는 스타일이 있다. 기본 디렉토리에는 다음 유형의 Sass파일이 포함될 수 있다. : 
-
-	* Vendor dependancies (Compass, Foundation)
-	* Authored dependancies (Mixins, variables, Extends)
-	* Fonts
-	* Reset
+  Base 디렉토리에는 프로젝트를 시작하는 데 도움이 되는 스타일이 있다. 기본 디렉토리에는 다음 유형의 Sass파일이 포함될 수 있다.:
+  * Vendor dependancies (Compass, Foundation)
+  * Authored dependancies (Mixins, variables, Extends)
+  * Fonts
+  * Reset
 
 2.  Layout
 
-  Layout 디렉토리는 페이지의 큰 컨테이너인 스타일을 포함한다. 이 디렉토리는 다음과 같은 Sass 파일이 포함될 수 있다. : 
-
-	* Responsive Grid
-	* Page specific layouts
+  Layout 디렉토리는 페이지의 큰 컨테이너인 스타일을 포함한다. 이 디렉토리는 다음과 같은 Sass 파일이 포함될 수 있다.:
+  * Responsive Grid
+  * Page specific layouts
 
 3.  Modules
 
-  Modules 디렉토리에는 많은 Sass파일이 들어있을 것이다. 페이지는 여러 모듈로 구성 될 수 있으며 개별적으로 스타일을 지정해야한다. 이 모듈에는 다음과 같은 Sass 파일이 포함될 수 있다. : 
-
-	* Header
-	* Footer
-	* Navigation
-	* Content Block
+  Modules 디렉토리에는 많은 Sass파일이 들어있을 것이다. 페이지는 여러 모듈로 구성 될 수 있으며 개별적으로 스타일을 지정해야한다. 이 모듈에는 다음과 같은 Sass 파일이 포함될 수 있다.:
+  * Header
+  * Footer
+  * Navigation
+  * Content Block
 
 4.  Views
 
-	Views 디렉토리에는 페이지가 일반 레이아웃 또는 모듈에서 변경해야하는 특정 스타일이 포함되어 있다. 예를 들어 웹 사이트의 헤더가 웹 사이트나 어플리케이션에서 녹색이더라도 views 파일이 들어오는 특정 페이지에서는 파란색 배경으로 바꿀 수 있다.
+  Views 디렉토리에는 페이지가 일반 레이아웃 또는 모듈에서 변경해야하는 특정 스타일이 포함되어 있다. 예를 들어 웹 사이트의 헤더가 웹 사이트나 어플리케이션에서 녹색이더라도 views 파일이 들어오는 특정 페이지에서는 파란색 배경으로 바꿀 수 있다.
 
 ## 미사용 Sass 모듈 분리(삭제)
 
